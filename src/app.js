@@ -7,7 +7,7 @@ const server = express();
 server.name = 'API';
 
 const corsOptions = {
-  origin: process.env.NODE_ENV === 'production' ? 'https://clienttoolverse-production.up.railway.app' : 'http://localhost:3000',
+  origin:'http://localhost:3000',
   credentials: true,
   methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'],
   allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept', 'Authorization'],
